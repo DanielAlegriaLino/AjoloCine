@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, ImageBackground, Pressable, Button } from 'react-native';
+import { StyleSheet, Text, View, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { MaterialIcons } from '@expo/vector-icons';
 
 export default function Welcome() {
   const navigation = useNavigation()
@@ -10,11 +11,12 @@ export default function Welcome() {
         <Text style={styles.mainTitle}>Welcome to <Text style={styles.redText}> AjoloCine </Text></Text>
         <Text style={styles.secondaryText}>Track your movies</Text>
       </View>
-      <ImageBackground style={{
-        width:'100%',
+      <View style={{
         height: '35%',
+        justifyContent:'center',
       }}>
-      </ImageBackground>
+        <MaterialIcons name="movie-filter" size={250} color="rgb(230,230,230)" />
+      </View>
       <View style={{width:'100%', alignContent:'center', justifyContent:'center', marginVertical:'2%'}}>
         <View style={{flexDirection:'row', alignItems:'center', paddingHorizontal:'6%', margin:'5%'}}>
           <View style={{flex:1, height:1, backgroundColor:'rgb(180,180,180)'}}/>
@@ -34,7 +36,7 @@ export default function Welcome() {
           <Text style={{textAlign:'center', color:'black', fontSize:20, textDecorationLine:'underline'}}>Log In</Text>
         </Pressable>
         <View style={{marginVertical:'5%', marginHorizontal:'auto'}}>
-          <Text style={{color:'white', fontSize:20}}>New Here? <Text onPress={()=>navigation.navigate('Sign In')} style={{textDecorationLine:'underline', color:'#FF5757'}}>Sign up</Text></Text>
+          <Text style={{color:'white', fontSize:20}}>New Here? <Text onPress={()=>navigation.navigate('Sign Up')} style={{textDecorationLine:'underline', color:'#FF5757'}}>Sign up</Text></Text>
         </View>
       </View>
       {/* <Button title='Email or phone' color={'rgba(154, 154, 154,.21)'} style={{color:'white', borderRadius:30}}/> */}
