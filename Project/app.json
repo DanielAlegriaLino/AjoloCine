@@ -17,11 +17,23 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "softwareKeyboardLayoutMode": "pan"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "permissions": [],
+            "windowSoftInputMode": "adjustPan"
+          }
+        }
+      ]
+    ]
   }
 }
