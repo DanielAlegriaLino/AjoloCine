@@ -40,7 +40,7 @@ export default function LogIn(){
 
     function handleSubmit(){
         setSent(true)
-        formValid ? navigation.navigate('Home') : 'null'
+        formValid ? navigation.navigate('HomeStack') : 'null'
     }
 
     return(
