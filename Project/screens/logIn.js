@@ -45,7 +45,7 @@ export default function LogIn(){
 
     return(
         <>
-            <View style={globalStyles.body}>    
+            <View style={globalStyles.formBody}>    
                 {!keyboardOpen && <View style={{display:'flex',
                 alignItems:'flex-start',
                 justifyContent:'center', 

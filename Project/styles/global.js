@@ -6,7 +6,21 @@ export const globalStyles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#000',
         alignItems: 'center',
+        // paddingHorizontal:20
+        // justifyContent:'center'
+    },
+    formBody:{
+        flex: 1,
+        backgroundColor: '#000',
+        alignItems: 'center',
         justifyContent:'center'
+    },
+    sectionTitle: {
+        color:'#FFF',
+        fontSize:25,
+        fontWeight:'bold',
+        marginBottom:20,
+        marginLeft:25
     },
     mainText: {
         color: "#FFF",
