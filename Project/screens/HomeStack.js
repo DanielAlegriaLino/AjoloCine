@@ -24,21 +24,18 @@ export default function HomeStack(){
                     iconName = focused ? 'person-circle' : 'person-circle-outline';
                 }
 
-                return <Ionicons name={iconName} size={size} color={color}/>;
+                return <Ionicons name={iconName} size={35} color={color}/>;
             },
             tabBarActiveTintColor:'rgb(205,205,205)',
             tabBarInactiveTintColor:'#562731',
             headerShown:false,
             tabBarStyle:{
                 backgroundColor:'rgb(172,61,57)',
-                paddingBottom: 5,
-                height:65
+                paddingBottom: 2,
+                height:50
             },
-            tabBarLabelStyle:{
-                fontSize:15,
-                fontWeight:'semibold'
-            },
-            tabBarHideOnKeyboard:true
+            tabBarHideOnKeyboard:true,
+            tabBarShowLabel:false
         })}>
             <Tab.Screen name='Home' component={Home}/>
             <Tab.Screen name='Discover' component={Discover}/>

@@ -6,30 +6,26 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default function Profile(){
     return(
-        <>
-            <KeyboardAvoidingView style={globalStyles.body}>
-                <ScrollView>
-                    <AppHeader/>
-                    <View style={styles.profileView}>
-                        <Ionicons style={styles.profileIcon} 
-                        name={"person-circle-outline"} size={250} color={'white'} />
-                        <View style={styles.profileInfo}>
-                            <Text style={{color:'white',fontSize:30,marginTop:135, fontWeight:'semibold'}}>Username</Text>
-                            <View style={{flexDirection:'row', justifyContent:'space-around', width:'100%'}}>
-                                <View style={{width:'50%', alignItems:'center', marginTop:25, fontWeight:'semibold'}}>
-                                    <Text style={{color:'white', fontSize:25}}>12</Text>
-                                    <Text style={{color:'white', marginTop:10, fontSize:16}}>Liked Films</Text>
-                                </View>
-                                <View style={{width:'50%', alignItems:'center', marginTop:25, fontWeight:'semibold'}}>
-                                    <Text style={{color:'white', fontSize:25}}>21</Text>
-                                    <Text style={{color:'white', marginTop:10, fontSize:16}}>Following</Text>
-                                </View>
-                            </View>
+        <View style={globalStyles.body}>
+           <AppHeader/>
+            <View style={styles.profileView}>
+                <Ionicons style={styles.profileIcon} 
+                name={"person-circle-outline"} size={250} color={'white'} />
+                <View style={styles.profileInfo}>
+                    <Text style={{color:'white',fontSize:30,marginTop:135, fontWeight:'semibold'}}>Username</Text>
+                    <View style={{flexDirection:'row', justifyContent:'space-around', width:'100%'}}>
+                        <View style={{width:'50%', alignItems:'center', marginTop:25, fontWeight:'semibold'}}>
+                            <Text style={{color:'white', fontSize:25}}>12</Text>
+                            <Text style={{color:'white', marginTop:10, fontSize:16}}>Liked Films</Text>
+                        </View>
+                        <View style={{width:'50%', alignItems:'center', marginTop:25, fontWeight:'semibold'}}>
+                            <Text style={{color:'white', fontSize:25}}>21</Text>
+                            <Text style={{color:'white', marginTop:10, fontSize:16}}>Following</Text>
                         </View>
                     </View>
-                </ScrollView>
-            </KeyboardAvoidingView>
-        </>
+                </View>
+            </View>
+        </View>
     )
 }
 

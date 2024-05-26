@@ -5,10 +5,8 @@ import { globalStyles } from "../styles/global";
 
 export default function Discover(){
     return(
-        <KeyboardAvoidingView style={globalStyles.body}>
-            <ScrollView>
-                <AppHeader/>
-            </ScrollView>
-        </KeyboardAvoidingView>
+        <View style={globalStyles.body}>
+            <AppHeader/>
+        </View>
     )
 }

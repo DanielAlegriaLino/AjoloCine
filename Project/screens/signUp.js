@@ -43,7 +43,7 @@ export default function SignUp(){
 
     return(
         <>
-            <View style={globalStyles.body}>    
+            <View style={globalStyles.formBody}>    
                 <View style={{display:'flex',
                 alignItems:'flex-start',
                 justifyContent:'center', 

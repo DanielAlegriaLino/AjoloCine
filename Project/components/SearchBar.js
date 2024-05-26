@@ -3,7 +3,7 @@ import { View, Text, TextInput, StyleSheet } from "react-native";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default function SearchBar(){
-    return(<View style={{display:'flex', flexDirection:'row', borderWidth:2, borderColor:'gray',borderRadius:25}}>
+    return(<View style={{display:'flex', flexDirection:'row', borderWidth:2, borderColor:'gray', borderRadius:25, marginHorizontal:20}}>
         <Ionicons style={{
             paddingVertical:15,
             marginHorizontal:10
